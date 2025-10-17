@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Edu App - Exercise</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="card">
+    <h1>Exercise</h1>
+    <div id="exercise-question">Loading question...</div>
+    <div id="exercise-options" class="options"></div>
+    <div id="feedback" class="feedback"></div>
+  </div>
+
+  <div id="completion-modal" class="modal">
+    <div class="modal-content">
+      <h2>Congratulations! 🎉</h2>
+      <p>You have completed the exercise!</p>
+      <button onclick="goHome()">Back to Home</button>
+    </div>
+  </div>
+
+  <div class="button-container">
+    <button id="next-btn" style="display:none;" onclick="nextQuestion()">Next Question</button>
+    <button id="finish-btn" style="display:none;" onclick="showScore()">Finish</button>
+  </div>  
+
+  <script src="script.js"></script>
+</body>
+</html>
